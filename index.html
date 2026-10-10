@@ -177,7 +177,8 @@
     <header class="bar">
       <div class="brand">
         <img src="assets/icon.svg" alt="呆呆鸟头像" />
-        <span>dodobird.eu.org</span>
+        <span>呆呆鸟</span>
+        <small>dodobird.eu.org</small>
       </div>
       <nav>
         <a href="#facts">呆鸟趣闻</a>
@@ -190,61 +191,73 @@
         <!-- 点击小鸟有惊喜 -->
         <svg class="bird" id="birdSvg" viewBox="0 0 512 512" role="img" aria-label="一只呆呆鸟，点击有惊喜">
           <g id="birdBob">
-            <ellipse cx="248" cy="500" rx="132" ry="11" fill="#3B3125" opacity="0.08"/>
+            <ellipse cx="256" cy="504" rx="105" ry="7" fill="#3B3125" opacity="0.08"/>
             <g id="birdInner">
               <!-- 小脚 -->
               <g fill="#E8A64E" stroke="#262016" stroke-width="6" stroke-linejoin="round" paint-order="stroke fill">
-                <ellipse cx="218" cy="503" rx="25" ry="9"/>
-                <ellipse cx="294" cy="503" rx="25" ry="9"/>
+                <ellipse cx="220" cy="498" rx="23" ry="8"/>
+                <ellipse cx="292" cy="498" rx="23" ry="8"/>
               </g>
               <!-- 小身子 -->
-              <ellipse cx="256" cy="454" rx="105" ry="52" fill="#F2C73D" stroke="#262016" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"/>
+              <ellipse cx="256" cy="448" rx="95" ry="48" fill="#F2C73D" stroke="#262016" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"/>
               <!-- 小翅膀 -->
               <g fill="#F2C73D" stroke="#262016" stroke-width="7" stroke-linejoin="round" paint-order="stroke fill">
-                <ellipse cx="146" cy="452" rx="26" ry="34" transform="rotate(16 146 452)"/>
-                <ellipse cx="366" cy="452" rx="26" ry="34" transform="rotate(-16 366 452)"/>
+                <ellipse cx="150" cy="446" rx="24" ry="32" transform="rotate(16 150 446)"/>
+                <ellipse cx="362" cy="446" rx="24" ry="32" transform="rotate(-16 362 446)"/>
               </g>
-              <!-- 大脑袋（上宽下窄的梨形） -->
-              <path d="M 190 414 C 140 398 106 340 106 250 C 104 116 176 50 256 50 C 336 50 408 116 406 250 C 406 340 372 398 322 414 C 294 424 218 424 190 414 Z"
+              <!-- 大脑袋（梨形） -->
+              <path d="M 196 408 C 146 392 108 336 108 248 C 106 118 178 62 256 62 C 334 62 406 118 404 248 C 404 336 366 392 316 408 C 288 418 224 418 196 408 Z"
                     fill="#F2C73D" stroke="#262016" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"/>
               <!-- 头顶呆毛 -->
-              <path d="M 250 54 C 242 26 268 14 271 42 C 272 51 262 56 250 54 Z"
+              <path d="M 250 64 C 240 32 272 20 275 50 C 276 59 264 64 250 64 Z"
                     fill="#F2C73D" stroke="#262016" stroke-width="6" stroke-linejoin="round" paint-order="stroke fill"/>
+              <!-- 脸颊红晕 -->
+              <ellipse cx="138" cy="285" rx="20" ry="13" fill="#F2A04E" opacity="0.35"/>
+              <ellipse cx="374" cy="285" rx="20" ry="13" fill="#F2A04E" opacity="0.35"/>
+              <!-- 垂下来的大嘴（塞在两眼之间） -->
+              <g stroke="#262016" stroke-width="7" stroke-linejoin="round" paint-order="stroke fill">
+                <path d="M 214 228 C 214 206 298 206 298 228 C 298 264 280 288 256 288 C 232 288 214 264 214 228 Z"
+                      fill="#E09140"/>
+                <path d="M 226 270 C 226 306 240 330 256 330 C 272 330 286 306 286 270 Z"
+                      fill="#C07430"/>
+              </g>
+              <!-- 鼻孔 -->
+              <ellipse cx="236" cy="232" rx="5" ry="3.5" fill="#8A5522" opacity="0.8" transform="rotate(-15 236 232)"/>
+              <ellipse cx="276" cy="232" rx="5" ry="3.5" fill="#8A5522" opacity="0.8" transform="rotate(15 276 232)"/>
               <!-- 大白眼珠 -->
               <g fill="#FFFFFF" stroke="#262016" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill">
-                <ellipse cx="168" cy="225" rx="52" ry="64" transform="rotate(-15 168 225)"/>
-                <ellipse cx="344" cy="225" rx="52" ry="64" transform="rotate(15 344 225)"/>
+                <ellipse cx="172" cy="198" rx="52" ry="64" transform="rotate(-10 172 198)"/>
+                <ellipse cx="340" cy="198" rx="52" ry="64" transform="rotate(10 340 198)"/>
               </g>
-              <!-- 豆豆眼珠：对称地向下放空 -->
-              <ellipse cx="172" cy="252" rx="15" ry="21" fill="#262016"/>
-              <ellipse cx="340" cy="252" rx="15" ry="21" fill="#262016"/>
-              <circle cx="166" cy="240" r="4.5" fill="#FFFFFF"/>
-              <circle cx="334" cy="240" r="4.5" fill="#FFFFFF"/>
-              <!-- 眨眼用的眼皮 -->
-              <rect class="blink" x="108" y="155" width="120" height="142" rx="18" fill="#F2C73D"/>
-              <rect class="blink" x="284" y="155" width="120" height="142" rx="18" fill="#F2C73D"/>
-              <!-- 垂下来的大嘴 -->
-              <path d="M 206 282 C 202 322 224 362 256 362 C 288 362 310 322 306 282 Z"
-                    fill="#C07430" stroke="#262016" stroke-width="7" stroke-linejoin="round" paint-order="stroke fill"/>
-              <path d="M 178 216 C 178 192 334 192 334 216 C 334 262 306 294 256 294 C 206 294 178 262 178 216 Z"
-                    fill="#E09140" stroke="#262016" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"/>
-              <!-- 鼻孔 -->
-              <ellipse cx="228" cy="220" rx="5.5" ry="4" fill="#8A5522" opacity="0.8" transform="rotate(-20 228 220)"/>
-              <ellipse cx="284" cy="220" rx="5.5" ry="4" fill="#8A5522" opacity="0.8" transform="rotate(20 284 220)"/>
+              <!-- 豆豆眼珠：对称向下放空 -->
+              <ellipse cx="175" cy="222" rx="14" ry="18" fill="#262016"/>
+              <ellipse cx="337" cy="222" rx="14" ry="18" fill="#262016"/>
+              <!-- 眼神高光 -->
+              <circle cx="170" cy="212" r="4.5" fill="#FFFFFF"/>
+              <circle cx="332" cy="212" r="4.5" fill="#FFFFFF"/>
+              <!-- 眨眼眼皮（g 承载旋转，CSS 动画在内层 ellipse 上） -->
+              <g transform="rotate(-10 172 198)">
+                <ellipse class="blink" cx="172" cy="198" rx="52" ry="64"
+                         fill="#F2C73D" stroke="#262016" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"/>
+              </g>
+              <g transform="rotate(10 340 198)">
+                <ellipse class="blink" cx="340" cy="198" rx="52" ry="64"
+                         fill="#F2C73D" stroke="#262016" stroke-width="8" stroke-linejoin="round" paint-order="stroke fill"/>
+              </g>
             </g>
           </g>
-          <!-- 星星点缀 -->
+          <!-- 星星点缀（g 承载定位，CSS 动画在内层 path 上，避免 transform 冲突） -->
           <g fill="#F2C14E">
-            <path class="sparkle s1" transform="translate(66,108)" d="M0,-9 L2.4,-2.4 9,0 2.4,2.4 0,9 -2.4,2.4 -9,0 -2.4,-2.4 Z"/>
-            <path class="sparkle s2" transform="translate(458,84) scale(0.8)" d="M0,-9 L2.4,-2.4 9,0 2.4,2.4 0,9 -2.4,2.4 -9,0 -2.4,-2.4 Z"/>
-            <path class="sparkle s3" transform="translate(48,320) scale(0.7)" d="M0,-9 L2.4,-2.4 9,0 2.4,2.4 0,9 -2.4,2.4 -9,0 -2.4,-2.4 Z"/>
+            <g transform="translate(66,108)"><path class="sparkle s1" d="M0,-9 L2.4,-2.4 9,0 2.4,2.4 0,9 -2.4,2.4 -9,0 -2.4,-2.4 Z"/></g>
+            <g transform="translate(458,84) scale(0.8)"><path class="sparkle s2" d="M0,-9 L2.4,-2.4 9,0 2.4,2.4 0,9 -2.4,2.4 -9,0 -2.4,-2.4 Z"/></g>
+            <g transform="translate(48,320) scale(0.7)"><path class="sparkle s3" d="M0,-9 L2.4,-2.4 9,0 2.4,2.4 0,9 -2.4,2.4 -9,0 -2.4,-2.4 Z"/></g>
           </g>
         </svg>
         <div class="bubble" id="bubble" role="status" aria-live="polite"></div>
       </div>
 
       <div>
-        <span class="kicker">🦤 dodobird.eu.org</span>
+        <span class="kicker">🦤 呆呆鸟保护协会</span>
         <h1>不会飞，<br /><em>但一直在线</em>。</h1>
         <p class="sub">这里是呆呆鸟的家。看起来呆，其实只是毫无防备的真诚——毕竟在它的岛上，从来不需要设防。</p>
         <div class="cta">
